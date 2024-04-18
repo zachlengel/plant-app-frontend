@@ -6,9 +6,11 @@ import { LogoutLink } from "./Logout";
 import { Signup } from "./Signup";
 import { Modal } from "./Modal";
 import { PlantShow } from "./PlantShow";
+import { SchedulesIndex } from "./SchedulesIndex";
 
 export function Content() {
   const [plants, setPlants] = useState([]);
+  const [schedules, setSchedules] = useState([]);
   const [isPlantShowVisible, setIsPlantShowVisible] = useState(false);
   const [currentPlant, setCurrentPlant] = useState({});
 
@@ -18,6 +20,14 @@ export function Content() {
     axios.get("http://localhost:3000/plants.json").then((response) => {
       console.log(response.data);
       setPlants(response.data);
+    });
+  };
+
+  const handleIndexSchedules = () => {
+    console.log("handleIndexSchedules");
+    axios.get("http://localhost:3000/schedules.json").then((response) => {
+      console.log(response.data);
+      setSchedules(response.data);
     });
   };
 
@@ -35,6 +45,7 @@ export function Content() {
   };
 
   useEffect(handleIndexPlants, []);
+  useEffect(handleIndexSchedules, []);
 
   return (
     <main>
@@ -42,6 +53,7 @@ export function Content() {
       <Signup />
       <Login />
       <LogoutLink />
+      <SchedulesIndex schedules={schedules} onShowPlant={handleShowPlant} />
       <PlantsIndex plants={plants} onShowPlant={handleShowPlant} />
       <Modal show={isPlantShowVisible} onClose={handleClose}>
         <PlantShow plant={currentPlant} />
