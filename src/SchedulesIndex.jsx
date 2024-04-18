@@ -6,7 +6,11 @@ export function SchedulesIndex(props) {
         <div key={schedule.id}>
           <h2>{schedule.plant.name}</h2>
           <img src={schedule.plant.image_url} width={250} alt={schedule.plant.name} />
-          <button onClick={() => props.onShowPlant(schedule)}>More Info</button>
+          <p>
+            Your {schedule.plant.name} needs {schedule.plant.amount_of_sun} hours of sun a day and watered{" "}
+            {schedule.plant.days_to_water} days a week.
+          </p>
+          <p>It will be time to water on {schedule.watering_start_date}</p>
         </div>
       ))}
     </div>

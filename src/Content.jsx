@@ -53,7 +53,7 @@ export function Content() {
       <Signup />
       <Login />
       <LogoutLink />
-      <SchedulesIndex schedules={schedules} onShowPlant={handleShowPlant} />
+      <SchedulesIndex schedules={schedules} />
       <PlantsIndex plants={plants} onShowPlant={handleShowPlant} />
       <Modal show={isPlantShowVisible} onClose={handleClose}>
         <PlantShow plant={currentPlant} />
