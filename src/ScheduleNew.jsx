@@ -13,9 +13,6 @@ export function ScheduleNew(props) {
           Plant ID: <input name="plant_id" type="text" />
         </div>
         <div>
-          Image: <input name="image_url" type="text" />
-        </div>
-        <div>
           Watering Date: <input name="watering_start_date" type="text" />
         </div>
         <button type="submit">Create Schedule</button>

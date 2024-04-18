@@ -4,6 +4,7 @@ import axios from "axios";
 import { ScheduleNew } from "./ScheduleNew";
 import { Login } from "./Login";
 import { LogoutLink } from "./Logout";
+import { Signup } from "./Signup";
 
 export function Content() {
   const [plants, setPlants] = useState([]);
@@ -29,6 +30,7 @@ export function Content() {
   return (
     <main>
       <h1>Welcome to GrowPro!</h1>
+      <Signup />
       <Login />
       <LogoutLink />
       <ScheduleNew onCreateSchedule={handleCreateSchedule} />
