@@ -1,6 +1,6 @@
 export function PlantShow(props) {
   return (
-    <div>
+    <div className="show">
       <h1>{props.plant.name}</h1>
       <p>{props.plant.description}</p>
       <p>Sun: {props.plant.amount_of_sun} hours</p>

@@ -1,14 +1,17 @@
 export function PlantsIndex(props) {
   return (
     <div id="plants-index">
-      <h1>All Plants</h1>
-      {props.plants.map((plant) => (
-        <div key={plant.id}>
-          <h2>{plant.name}</h2>
-          <img src={plant.image_url} width={250} alt={plant.name} />
-          <button onClick={() => props.onShowPlant(plant)}>More Info</button>
-        </div>
-      ))}
+      <h1 className="index-header">All Plants</h1>
+      <div className="container">
+        {props.plants.map((plant) => (
+          <div key={plant.id} className="card">
+            <h2>{plant.name}</h2>
+            <img src={plant.image_url} alt={plant.name} />
+            <br />
+            <button onClick={() => props.onShowPlant(plant)}>More Info</button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

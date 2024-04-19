@@ -7,6 +7,7 @@ import { Signup } from "./Signup";
 import { Modal } from "./Modal";
 import { PlantShow } from "./PlantShow";
 import { SchedulesIndex } from "./SchedulesIndex";
+import "./index.css";
 
 export function Content() {
   const [plants, setPlants] = useState([]);
