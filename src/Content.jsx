@@ -50,10 +50,6 @@ export function Content() {
 
   return (
     <main>
-      <h1>Welcome to GrowPro!</h1>
-      <Signup />
-      <Login />
-      <LogoutLink />
       <SchedulesIndex schedules={schedules} />
       <PlantsIndex plants={plants} onShowPlant={handleShowPlant} />
       <Modal show={isPlantShowVisible} onClose={handleClose}>
