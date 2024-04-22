@@ -3,7 +3,7 @@ export function ScheduleNew(props) {
     event.preventDefault();
     const params = new FormData(event.target);
     props.onCreateSchedule(params, () => event.target.reset());
-    window.location.href = "/";
+    window.location.href = "/plants";
   };
 
   return (
@@ -16,7 +16,9 @@ export function ScheduleNew(props) {
         <div>
           Watering Date: <input name="watering_start_date" type="text" />
         </div>
-        <button type="submit">Create Schedule</button>
+        <button className="button-33" type="submit">
+          Create Schedule
+        </button>
       </form>
     </div>
   );

@@ -8,7 +8,9 @@ export function PlantsIndex(props) {
             <h2>{plant.name}</h2>
             <img src={plant.image_url} alt={plant.name} />
             <br />
-            <button onClick={() => props.onShowPlant(plant)}>More Info</button>
+            <button className="button-33" onClick={() => props.onShowPlant(plant)}>
+              More Info
+            </button>
           </div>
         ))}
       </div>
