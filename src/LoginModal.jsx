@@ -9,7 +9,7 @@ export function LoginModal(props) {
         <section className="modal-main">
           {props.children}
           <Login />
-          <h1>-OR-</h1>
+          <h1 className="or">-OR-</h1>
           <Signup />
           <button className="close" type="button" onClick={props.onClose}>
             &#x2715;

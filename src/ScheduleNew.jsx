@@ -8,7 +8,7 @@ export function ScheduleNew(props) {
 
   return (
     <div className="new-schedule">
-      <h1>New Schedule</h1>
+      <h1>Create a Schedule</h1>
       <form onSubmit={handleSubmit}>
         <div>
           Plant ID: <input name="plant_id" type="text" />
@@ -17,7 +17,7 @@ export function ScheduleNew(props) {
           Watering Date: <input name="watering_start_date" type="text" />
         </div>
         <button className="button-33" type="submit">
-          Create Schedule
+          Add To Schedule
         </button>
       </form>
     </div>
