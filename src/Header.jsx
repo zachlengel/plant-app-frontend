@@ -18,17 +18,24 @@ export function Header() {
 
   return (
     <header>
-      <nav id="navbar">
-        <h1>GrowPro</h1>
-        <ul>
-          <li>
-            <a onClick={() => handleShowLogin()}>More info</a>
-          </li>
-          <LoginModal show={isLoginShowVisible} onClose={handleCloseLogin} />
-          <li>
-            <LogoutLink />
-          </li>
-        </ul>
+      <nav>
+        <h1 className="brand">GrowPro</h1>
+        <div id="navbar">
+          <ul>
+            <li>
+              <button className="header-buttons" onClick={() => handleShowLogin()}>
+                Login/Signup
+              </button>
+            </li>
+            <li>
+              <button className="header-buttons">Your Plants</button>
+            </li>
+            <LoginModal show={isLoginShowVisible} onClose={handleCloseLogin} />
+            <li>
+              <LogoutLink />
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );

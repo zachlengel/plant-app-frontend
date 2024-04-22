@@ -7,7 +7,7 @@ export function ScheduleNew(props) {
   };
 
   return (
-    <div>
+    <div className="new-schedule">
       <h1>New Schedule</h1>
       <form onSubmit={handleSubmit}>
         <div>
