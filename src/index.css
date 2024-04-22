@@ -29,6 +29,10 @@ header {
   box-shadow: 1rem 1rem 1rem black;
 }
 
+a {
+  text-decoration: none;
+}
+
 #navbar{
   text-align: center;
 }
@@ -92,3 +96,25 @@ li {
   border-radius: 4rem;
 }
 
+.homepage {
+  background-image: url(https://media0.giphy.com/media/xdkXW7Scx6gus/giphy.gif?cid=6c09b9522s8ntrctq1fh4jv7mcbuf9yq2kaxfsmb0o0hdbk6&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+  background-size: cover;
+  padding: 8rem;
+  box-shadow: 1rem 1rem 2rem black;
+  color: white;
+  text-align: center;
+}
+
+.homepage h1 {
+  font-size: 6rem;
+  margin: 0 0 5rem 0;
+  background-color: rgba(0, 0, 0, 0.50);
+  border-radius: 4rem;
+}
+
+.homepage p {
+  font-size: 2rem;
+  margin: 0 0 11.5rem 0;
+  background-color: rgba(0, 0, 0, 0.50);
+  border-radius: 4rem;
+}

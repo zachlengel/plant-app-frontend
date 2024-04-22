@@ -19,7 +19,9 @@ export function Header() {
   return (
     <header>
       <nav>
-        <h1 className="brand">GrowPro</h1>
+        <a href="http://localhost:5173/">
+          <h1 className="brand">GrowPro</h1>
+        </a>
         <div id="navbar">
           <ul>
             <li>
@@ -28,7 +30,14 @@ export function Header() {
               </button>
             </li>
             <li>
-              <button className="header-buttons">Your Plants</button>
+              <a href="http://localhost:5173/plants">
+                <button className="header-buttons">All Plants</button>
+              </a>
+            </li>
+            <li>
+              <a href="http://localhost:5173/schedules">
+                <button className="header-buttons">Your Plants</button>
+              </a>
             </li>
             <LoginModal show={isLoginShowVisible} onClose={handleCloseLogin} />
             <li>

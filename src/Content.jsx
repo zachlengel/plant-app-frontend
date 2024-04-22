@@ -1,13 +1,12 @@
 import { PlantsIndex } from "./PlantsIndex";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Login } from "./Login";
-import { LogoutLink } from "./Logout";
-import { Signup } from "./Signup";
 import { Modal } from "./Modal";
 import { PlantShow } from "./PlantShow";
 import { SchedulesIndex } from "./SchedulesIndex";
 import "./index.css";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./Home";
 
 export function Content() {
   const [plants, setPlants] = useState([]);
@@ -50,8 +49,11 @@ export function Content() {
 
   return (
     <main>
-      <SchedulesIndex schedules={schedules} />
-      <PlantsIndex plants={plants} onShowPlant={handleShowPlant} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/schedules" element={<SchedulesIndex schedules={schedules} />} />
+        <Route path="/plants" element={<PlantsIndex plants={plants} onShowPlant={handleShowPlant} />} />
+      </Routes>
       <Modal show={isPlantShowVisible} onClose={handleClose}>
         <PlantShow plant={currentPlant} />
       </Modal>
