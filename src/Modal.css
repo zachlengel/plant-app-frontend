@@ -100,7 +100,7 @@ label {
   font-size: 1em; 
   line-height: 4em;
   text-transform: uppercase;
-  color: red;
+  color: white;
   transition: all .3s ease-in;
   opacity: 0;
   cursor: pointer;
