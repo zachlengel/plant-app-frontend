@@ -20,9 +20,11 @@ export function Modal(props) {
         <section className="modal-main">
           {props.children}
           <ScheduleNew onCreateSchedule={handleCreateSchedule} />
-          <button className="close" type="button" onClick={props.onClose}>
-            &#x2715;
-          </button>
+          <div className="outer">
+            <div className="inner">
+              <label onClick={props.onClose}>Close</label>
+            </div>
+          </div>
         </section>
       </div>
     );

@@ -73,7 +73,7 @@
   text-align: center;
   font-size: 2rem;
   background-color: rgba(255, 255, 255, 0.85);
-  margin: 1rem 4rem 1rem 4rem;
+  margin: 1rem 4rem 0 4rem;
   border-radius: 5rem;
   box-shadow: 1rem 1rem 2rem black;
 }
@@ -81,4 +81,64 @@
 .or {
   font-size: 3rem;
   color: white;
+}
+
+.outer {
+  position: relative;
+  margin: auto;
+  width: 100px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.inner {
+  width: inherit;
+  text-align: center;
+}
+
+label { 
+  font-size: 1em; 
+  line-height: 4em;
+  text-transform: uppercase;
+  color: red;
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inner:before, .inner:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: inherit;
+  background: white;
+  left: 0;
+  transition: all .3s ease-in;
+}
+
+.inner:before {
+  top: 50%; 
+  transform: rotate(45deg);  
+}
+
+.inner:after {  
+  bottom: 50%;
+  transform: rotate(-45deg);  
+}
+
+.outer:hover label {
+  opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
 }

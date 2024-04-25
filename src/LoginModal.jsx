@@ -11,9 +11,11 @@ export function LoginModal(props) {
           <Login />
           <h1 className="or">-OR-</h1>
           <Signup />
-          <button className="close" type="button" onClick={props.onClose}>
-            &#x2715;
-          </button>
+          <div className="outer">
+            <div className="inner">
+              <label onClick={props.onClose}>Close</label>
+            </div>
+          </div>
         </section>
       </div>
     );
