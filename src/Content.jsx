@@ -38,6 +38,15 @@ export function Content() {
     setCurrentPlant(plant);
   };
 
+  // Used in the submit button to add new schedule
+  const handleCreateSchedule = (params, successCallback) => {
+    console.log("handleCreateSchedule", params);
+    axios.post("http://localhost:3000/schedules.json", params).then((response) => {
+      setPlants([...plants, response.data]);
+      successCallback();
+    });
+  };
+
   // Closes Modal
   const handleClose = () => {
     console.log("handleClose");
@@ -55,7 +64,7 @@ export function Content() {
         <Route path="/plants" element={<PlantsIndex plants={plants} onShowPlant={handleShowPlant} />} />
       </Routes>
       <Modal show={isPlantShowVisible} onClose={handleClose}>
-        <PlantShow plant={currentPlant} />
+        <PlantShow plant={currentPlant} onCreateSchedule={handleCreateSchedule} />
       </Modal>
     </main>
   );
