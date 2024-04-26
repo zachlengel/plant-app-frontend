@@ -1,19 +1,10 @@
 import "react-datepicker/dist/react-datepicker.css";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import axios from "axios";
 
 export function PlantShow(props) {
-  const [plants, setPlants] = useState([]);
   const [date, setDate] = useState(new Date());
-  const [startDate, setStartDate] = useState();
-  const [endDate, setEndDate] = useState();
-  const handleChange = (range) => {
-    const [startDate, endDate] = range;
-    setStartDate(startDate);
-    setEndDate(endDate);
-  };
-  //
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const params = new FormData(event.target);
