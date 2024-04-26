@@ -50,10 +50,10 @@ li {
 
 .container {
   text-align: center;
-  margin: 0 3rem 3rem 3rem;
+  margin: 0 3rem 0 3rem;
   padding: calc(2vh + 2vw);
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr;
   border-radius: 5rem;
   color: white;
   font-size: calc(1vh + 1vw);
@@ -66,17 +66,19 @@ li {
 .container button {
   border-radius: 10rem;
   background-color: white;
-  font-size: 100%;
+  font-size: 150%;
   padding: 0 2em 0 2em;
   margin: 0 1em 0 1em;
+  width: 10em;
+  border-radius: 2em;
 }
 
 .index-header {
   text-align: center;
   font-size: calc(3vh + 3vw);
-  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-natural-green-leaf-pattern-3d-rendered-raster-illustration-for-background-and-image_3731630.jpg);
+  background-image: url(https://st.depositphotos.com/1022150/2359/i/950/depositphotos_23599473-stock-photo-soil-and-grass-background.jpg);
   background-size: contain;
-  margin: 0 10% 0 15%;
+  margin: 0 10% 0 10%;
   border-radius: 0 0 4rem 4rem;
   color: white;
   box-shadow: 1rem 1rem 1rem black;
@@ -89,11 +91,11 @@ li {
   margin: calc(1vh + 1vw);
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem black;
-  padding: calc(1vh + 1vw);
+  padding: 5% ;
+  font-size: calc(.7vh + 1vw);
 }
 
 .card img {
-  border-radius: 0 0 3em 3em;
   height: 80%;
   width: 100%;
 }
@@ -105,6 +107,12 @@ li {
   font-size: 150%;
   border-radius: 4em 4em 0 0;
   font-family: Montserrat Alternates;
+}
+
+.bottom-text {
+  background-color: white;
+  color: black;
+  border-radius: 0 0 3em 3em;
 }
 
 .homepage {
