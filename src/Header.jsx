@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { LoginModal } from "./LoginModal";
 import { LogoutLink } from "./Logout";
 import "./index.css";

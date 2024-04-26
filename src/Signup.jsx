@@ -30,17 +30,19 @@ export function Signup() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
-        <div>
-          Name: <input name="name" type="text" />
-        </div>
-        <div>
-          Email: <input name="email" type="email" />
-        </div>
-        <div>
-          Password: <input name="password" type="password" />
-        </div>
-        <div>
-          Password confirmation: <input name="password_confirmation" type="password" />
+        <div className="signup-content">
+          <div>
+            Name: <input name="name" type="text" />
+          </div>
+          <div>
+            Email: <input name="email" type="email" />
+          </div>
+          <div>
+            Password: <input name="password" type="password" />
+          </div>
+          <div>
+            Confirm Password: <input name="password_confirmation" type="password" />
+          </div>
         </div>
         <button className="button-33" type="submit">
           Create Account

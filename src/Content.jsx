@@ -23,6 +23,7 @@ export function Content() {
     });
   };
 
+  // Shows all schedules
   const handleIndexSchedules = () => {
     console.log("handleIndexSchedules");
     axios.get("http://localhost:3000/schedules.json").then((response) => {

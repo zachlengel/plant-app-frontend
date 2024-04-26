@@ -62,25 +62,39 @@
 
 #login  {
   text-align: center;
-  font-size: 2rem;
   background-color: rgba(255, 255, 255, 0.85);
-  margin: 3rem 4rem 1rem 4rem;
+  margin: 0;
   border-radius: 5rem;
   box-shadow: 1rem 1rem 2rem black;
+  line-height: 2em;
+}
+
+#login h1 {
+  font-size: calc(2vh + 2vw);
+  margin-bottom: .5em;
+  line-height: 1em;
 }
 
 #signup {
   text-align: center;
-  font-size: 2rem;
+  /* font-size: 2em; */
   background-color: rgba(255, 255, 255, 0.85);
-  margin: 1rem 4rem 0 4rem;
+  margin: 0;
   border-radius: 5rem;
   box-shadow: 1rem 1rem 2rem black;
+  line-height: 2em;
+}
+
+#signup h1 {
+  font-size: calc(2vh + 2vw);
+  margin-bottom: .5em;
+  line-height: 1em;
 }
 
 .or {
-  font-size: 3rem;
+  font-size: calc(2vh + 2vw);
   color: white;
+  margin: .5em 0;
 }
 
 .outer {

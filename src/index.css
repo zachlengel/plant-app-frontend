@@ -18,7 +18,7 @@ img {
 }
 
 header {
-  background-image: url(https://st.depositphotos.com/1035837/3924/i/950/depositphotos_39247045-stock-photo-wood-fence-background.jpg);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/024/494/413/large_2x/cobblestoned-pavement-green-moss-between-brick-background-old-stone-pavement-texture-cobbles-closeup-with-green-grass-in-the-seams-stone-paved-walkway-in-old-town-free-photo.jpg);
   background-size: cover;
   box-shadow: 0 1rem 2rem black;
 }
@@ -53,7 +53,7 @@ li {
   margin: 0 3rem 3rem 3rem;
   padding: calc(2vh + 2vw);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 33% 33% 33%;
   border-radius: 5rem;
   color: white;
   font-size: calc(1vh + 1vw);
@@ -66,9 +66,9 @@ li {
 .container button {
   border-radius: 10rem;
   background-color: white;
-  font-size: calc(1vh + 2vw);
-  padding: 0 3rem 0 3rem;
-  margin: 0 1rem 0 1rem;
+  font-size: 100%;
+  padding: 0 2em 0 2em;
+  margin: 0 1em 0 1em;
 }
 
 .index-header {
@@ -76,7 +76,7 @@ li {
   font-size: calc(3vh + 3vw);
   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-natural-green-leaf-pattern-3d-rendered-raster-illustration-for-background-and-image_3731630.jpg);
   background-size: contain;
-  margin: 0 1.5em 0 1.5em;
+  margin: 0 10% 0 15%;
   border-radius: 0 0 4rem 4rem;
   color: white;
   box-shadow: 1rem 1rem 1rem black;
@@ -87,20 +87,22 @@ li {
 .card {
   background-color: rgba(0, 0, 0, 0.693);
   margin: calc(1vh + 1vw);
-  border-radius: 3rem;
+  border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem black;
   padding: calc(1vh + 1vw);
 }
 
 .card img {
   border-radius: 0 0 3em 3em;
+  height: 80%;
+  width: 100%;
 }
 
 .card h2 {
   background-color: aliceblue;
   color: black;
-  margin: 0 0 0 0;
-  font-size: calc(2vh + 2vw);
+  margin: 0;
+  font-size: 150%;
   border-radius: 4em 4em 0 0;
   font-family: Montserrat Alternates;
 }
