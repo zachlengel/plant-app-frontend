@@ -1,6 +1,3 @@
-import React from "react";
-import moment from "moment";
-
 export function SchedulesIndex(props) {
   return (
     <div className="plants-index">
@@ -19,14 +16,11 @@ export function SchedulesIndex(props) {
               <div className="card__content | flow">
                 <div className="card__content--container | flow">
                   <h2 className="card__title">{schedule.plant.name}</h2>
-                  <div className="schedule-content">
-                    <p>
-                      Your {schedule.plant.name} needs {schedule.plant.amount_of_sun} hours of sun a day and watered{" "}
-                      {schedule.plant.days_to_water} days a week.
-                    </p>
-                    <p>It will be time to water on {moment(schedule.watering_start_date).format(`MMMM Do, YYYY`)}.</p>
-                  </div>
+                  <div className="schedule-content"></div>
                 </div>
+                <button className="button-33" onClick={() => props.onShowSchedule(schedule)}>
+                  Check Plant
+                </button>
               </div>
             </article>
             ;
