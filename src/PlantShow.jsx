@@ -16,9 +16,11 @@ export function PlantShow(props) {
     <div>
       <div className="show">
         <h1>{props.plant.name}</h1>
-        <p>{props.plant.description}</p>
-        <p>Sun: {props.plant.amount_of_sun} hours</p>
-        <p>Water: {props.plant.days_to_water} days a week</p>
+        <div className="show-decription">
+          <p>{props.plant.description}</p>
+          <p>Sun: {props.plant.amount_of_sun} hours</p>
+          <p>Water: {props.plant.days_to_water} days a week</p>
+        </div>
       </div>
       {/* Schedule form */}
       <div className="new-schedule">

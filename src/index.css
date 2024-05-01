@@ -2,19 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Mono:wght@100..900&family=Orbitron:wght@400..900&display=swap');
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
 html {
   scroll-behavior: smooth;
   background-image: url(https://i.pinimg.com/736x/68/e6/1b/68e61bce48cb1839e2d4be8e41531012.jpg);
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 header {
@@ -24,7 +23,7 @@ header {
 }
 
 .brand {
-  font-size: 4em;
+  font-size: 6vw;
   text-align: center;
   background-image: url(https://img.pikbest.com/wp/202343/versatiles-top-view-of-natural-green-leaves-texture-background-versatile-copy-space-for-banners-wallpapers-and-more_9985956.jpg!w700wp);
   background-size: 40%;
@@ -50,27 +49,18 @@ li {
 
 .container {
   text-align: center;
-  margin: 0 3rem 0 3rem;
+  /* margin: 0 1em 0 1em; */
   padding: calc(2vh + 2vw);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-radius: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
   color: white;
-  font-size: calc(1vh + 1vw);
+  /* font-size: calc(1vh + 1vw); */
 }
 
 @media (max-width: 992px) {
   .container {  grid-template-columns: auto;}
-}
-
-.container button {
-  border-radius: 10rem;
-  background-color: white;
-  font-size: 150%;
-  padding: 0 2em 0 2em;
-  margin: 0 1em 0 1em;
-  width: 10em;
-  border-radius: 2em;
 }
 
 .index-header {
@@ -82,31 +72,156 @@ li {
   border-radius: 0 0 4rem 4rem;
   color: white;
   box-shadow: 1rem 1rem 1rem black;
-  font-family: orbitron;
+  font-family: Montserrat;
   text-shadow: rgb(0, 0, 0) 10px 0 10px;
 }
 
-.card {
-  background-color: rgba(0, 0, 0, 0.693);
-  margin: calc(1vh + 1vw);
-  border-radius: 1rem;
-  box-shadow: 1rem 1rem 1rem black;
-  padding: 5% ;
-  font-size: calc(.7vh + 1vw);
+
+:root {
+  /* Colors */
+  --brand-color: hsl(46, 100%, 50%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
 }
 
-.card img {
-  height: 80%;
+
+h2 {
+  font-size: 2.25rem;
+  font-family: var(--font-title);
+  color: var(--white);
+  line-height: 1.1;
+}
+
+
+/* CARD COMPONENT */
+
+.card {
+  display: grid;
+  place-items: center;
+  width: 80vw;
+  max-width: 21.875rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  margin: 1em;
+}
+
+.card > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
   width: 100%;
 }
 
-.card h2 {
-  background-color: aliceblue;
-  color: black;
-  margin: 0;
-  font-size: 150%;
-  border-radius: 4em 4em 0 0;
-  font-family: Montserrat Alternates;
+.card__content--container {
+  --flow-space: 1.25rem;
+}
+
+.card__title {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+  line-height: .9em;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .card__content {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .card__title::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .card__background {
+    transition: transform 500ms ease-in;
+  }
+
+  .card__content--container > :not(.card__title),
+  .card__button {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .card:hover .card__content,
+  .card:focus-within .card__content {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .card:focus-within .card__content {
+    transition-duration: 0ms;
+  }
+
+  .card:hover .card__background,
+  .card:focus-within .card__background {
+    transform: scale(1.3);
+  }
+
+  .card:hover .card__content--container > :not(.card__title),
+  .card:hover .card__button,
+  .card:focus-within .card__content--container > :not(.card__title),
+  .card:focus-within .card__button {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .card:hover .card__title::after,
+  .card:focus-within .card__title::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
 }
 
 .bottom-text {
@@ -142,6 +257,11 @@ li {
 
 .schedules-index {
   text-align: center;
+}
+
+.schedule-content {
+  margin: 2em 1em 0 0;
+  font-size: 1.2em;
 }
 
 .button-33 {
