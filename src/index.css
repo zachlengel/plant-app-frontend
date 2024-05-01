@@ -13,7 +13,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-image: url(https://i.pinimg.com/736x/68/e6/1b/68e61bce48cb1839e2d4be8e41531012.jpg);
+  background-image: url(https://st.depositphotos.com/1793716/1354/i/450/depositphotos_13549785-stock-photo-old-dirty-wooden-texture-in.jpg);
 }
 
 header {
@@ -49,14 +49,12 @@ li {
 
 .container {
   text-align: center;
-  /* margin: 0 1em 0 1em; */
   padding: calc(2vh + 2vw);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
-  /* font-size: calc(1vh + 1vw); */
 }
 
 @media (max-width: 992px) {
@@ -66,12 +64,13 @@ li {
 .index-header {
   text-align: center;
   font-size: calc(3vh + 3vw);
-  background-image: url(https://st.depositphotos.com/1022150/2359/i/950/depositphotos_23599473-stock-photo-soil-and-grass-background.jpg);
-  background-size: contain;
-  margin: 0 10% 0 10%;
-  border-radius: 0 0 4rem 4rem;
+  background-image: url(https://wallpaperswide.com/download/plant-wallpaper-5120x2880.jpg);
+  background-size: cover;
+  margin: 3% 8% 0 8%;
+  padding: 1rem 0;
+  border-radius: .2em;
   color: white;
-  box-shadow: 1rem 1rem 1rem black;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.824);
   font-family: Montserrat;
   text-shadow: rgb(0, 0, 0) 10px 0 10px;
 }
@@ -106,7 +105,7 @@ h2 {
   height: 28.125rem;
   overflow: hidden;
   border-radius: 0.625rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.785);
   margin: 1em;
 }
 
@@ -233,7 +232,7 @@ h2 {
 .homepage {
   background-image: url(https://media0.giphy.com/media/xdkXW7Scx6gus/giphy.gif?cid=6c09b9522s8ntrctq1fh4jv7mcbuf9yq2kaxfsmb0o0hdbk6&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
   background-size: cover;
-  margin: 2em 1em 0 1em;
+  margin: 2em 1em 2em 1em;
   box-shadow: 1rem 1rem 2rem black;
   color: white;
   text-align: center;
@@ -304,3 +303,4 @@ footer img {
   width: calc(2.5vh + 2.5vw);
   margin: 1em;
 }
+
