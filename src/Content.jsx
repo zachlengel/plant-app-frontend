@@ -55,6 +55,24 @@ export function Content() {
     setIsScheduleShowVisible(false);
   };
 
+  // Used to update watering time in schedule
+  const handleUpdateSchedule = (id, params, successCallback) => {
+    console.log("handleUpdateSchedule", params);
+    axios.patch(`http://localhost:3000/schedules/${id}.json`, params).then((response) => {
+      setSchedules(
+        schedules.map((schedule) => {
+          if (schedule.id === response.data.id) {
+            return response.data;
+          } else {
+            return schedule;
+          }
+        })
+      );
+      successCallback();
+      handleScheduleClose();
+    });
+  };
+
   // Used in the submit button to add new schedule
   const handleCreateSchedule = (params, successCallback) => {
     console.log("handleCreateSchedule", params);
@@ -85,7 +103,7 @@ export function Content() {
       </Routes>
 
       <Modal show={isScheduleShowVisible} onClose={handleScheduleClose}>
-        <ScheduleShow schedule={currentSchedule} />
+        <ScheduleShow schedule={currentSchedule} onUpdateSchedule={handleUpdateSchedule} />
       </Modal>
 
       <Modal show={isPlantShowVisible} onClose={handleClose}>

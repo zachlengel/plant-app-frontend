@@ -12,7 +12,7 @@ export function PlantsIndex(props) {
                   <h2 className="card__title">{plant.name}</h2>
                 </div>
                 <button className="button-33" onClick={() => props.onShowPlant(plant)}>
-                  Read more
+                  More Info
                 </button>
               </div>
             </article>
