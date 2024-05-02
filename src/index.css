@@ -305,7 +305,7 @@ footer {
 
 footer img {
   width: calc(2.5vh + 2.5vw);
-  margin: 1em;
+  margin: .5em 2em;
 }
 
 @keyframes gm-slidein {
@@ -360,4 +360,11 @@ footer img {
   animation:gm-slidein 9s 1;
   max-width:100%;
   text-align:center;
+}
+
+.flash {
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.403);
+  margin-top: .5em;
 }

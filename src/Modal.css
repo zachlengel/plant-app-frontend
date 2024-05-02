@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Mono:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&display=swap');
+
 .modal-background {
   display: block;
   position: fixed;
@@ -46,6 +50,7 @@
 .show h1 {
   text-decoration: underline;
   font-size: 4vw;
+  font-family: orbitron;
 }
 
 .new-schedule {
@@ -61,6 +66,7 @@
 .new-schedule h1 {
   text-decoration: underline;
   font-size: 4vw;
+  font-family: orbitron;
 }
 
 #login  {
@@ -77,6 +83,7 @@
   margin-bottom: .5em;
   line-height: 1em;
   text-decoration: underline;
+  font-family: orbitron;
 }
 
 input {
@@ -92,12 +99,6 @@ input {
   border-radius: 5rem;
   box-shadow: 1rem 1rem 2rem black;
   line-height: 2em;
-}
-
-#signup h1 {
-  font-size: calc(2vh + 2vw);
-  margin-bottom: .5em;
-  line-height: 1em;
 }
 
 .or {
