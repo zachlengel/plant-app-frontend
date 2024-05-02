@@ -49,7 +49,7 @@ li {
 
 .container {
   text-align: center;
-  padding: calc(2vh + 2vw);
+  padding: 2vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -77,11 +77,9 @@ li {
 
 
 :root {
-  /* Colors */
   --brand-color: hsl(46, 100%, 50%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
-  /* Fonts */
   --font-title: "Montserrat", sans-serif;
   --font-text: "Lato", sans-serif;
 }
@@ -269,16 +267,16 @@ h2 {
 
 .button-33 {
   background-color: #c2fbd7;
-  border-radius: 100px;
+  border-radius: 10px;
   box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
   color: green;
   cursor: default;
   display: inline-block;
   font-family: orbitron,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 20px 10px;
+  padding: 15px 10px;
   text-align: center;
   text-decoration: none;
-  transition: all 250ms;
+  transition: all 450ms;
   border: 0;
   font-size: calc(1vh + 1vw);
   user-select: none;
@@ -293,7 +291,7 @@ header .button-33 {
 
 .button-33:hover {
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
+  transform: scale(1.05) rotate(-2deg);
   background-color: rgb(0, 128, 0);
   color: white;
 }
