@@ -94,6 +94,10 @@ h2 {
   line-height: 1.1;
 }
 
+#login form {
+  font-size: 1.5em;
+}
+
 
 /* CARD COMPONENT */
 

@@ -13,6 +13,10 @@ export function ScheduleShow(props) {
     window.location.href = "/schedules";
   };
 
+  const handleClick = () => {
+    props.onDestroySchedule(props.schedule.id);
+  };
+
   return (
     <div>
       <div className="show">
@@ -36,6 +40,9 @@ export function ScheduleShow(props) {
           </div>
           <button className="button-33" type="submit">
             Update Schedule
+          </button>
+          <button className="button-33" onClick={handleClick}>
+            Delete Schedule
           </button>
         </form>
       </div>

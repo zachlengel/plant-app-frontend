@@ -73,14 +73,20 @@
 }
 
 #login h1 {
-  font-size: calc(2vh + 2vw);
+  font-size: 3em;
   margin-bottom: .5em;
   line-height: 1em;
+  text-decoration: underline;
+}
+
+input {
+  border-radius: 4em;
+  font-size: .7em;
+  text-align: center;
 }
 
 #signup {
   text-align: center;
-  /* font-size: 2em; */
   background-color: rgba(255, 255, 255, 0.85);
   margin: 0;
   border-radius: 5rem;
@@ -115,7 +121,7 @@
   position: relative;
   margin: auto;
   width: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   cursor: pointer;
 }
 

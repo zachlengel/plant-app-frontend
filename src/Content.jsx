@@ -73,6 +73,15 @@ export function Content() {
     });
   };
 
+  // Used to delete schedules for user
+  const handleDestroySchedule = (id) => {
+    console.log("handleDestroySchedule", id);
+    axios.delete(`http://localhost:3000/schedules/${id}.json`).then((response) => {
+      setSchedules(schedules.filter((schedule) => schedule.id !== id));
+      handleScheduleClose();
+    });
+  };
+
   // Used in the submit button to add new schedule
   const handleCreateSchedule = (params, successCallback) => {
     console.log("handleCreateSchedule", params);
@@ -103,7 +112,11 @@ export function Content() {
       </Routes>
 
       <Modal show={isScheduleShowVisible} onClose={handleScheduleClose}>
-        <ScheduleShow schedule={currentSchedule} onUpdateSchedule={handleUpdateSchedule} />
+        <ScheduleShow
+          schedule={currentSchedule}
+          onUpdateSchedule={handleUpdateSchedule}
+          onDestroySchedule={handleDestroySchedule}
+        />
       </Modal>
 
       <Modal show={isPlantShowVisible} onClose={handleClose}>
