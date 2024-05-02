@@ -20,7 +20,7 @@ export function ScheduleShow(props) {
   return (
     <div>
       <div className="show">
-        <h1>Schedule information</h1>
+        <h1>Schedule Info</h1>
         <p>
           Your {props.schedule.plant.name} needs {props.schedule.plant.amount_of_sun} hours of sun a day and watered{" "}
           {props.schedule.plant.days_to_water} days a week.
@@ -30,7 +30,7 @@ export function ScheduleShow(props) {
       <div className="update-schedule">
         <form onSubmit={handleSubmitSchedule}>
           <div>
-            Update Watering Date:{" "}
+            New Watering Date:{" "}
             <DatePicker
               dateFormat={"yyyy/MM/dd"}
               name="watering_start_date"

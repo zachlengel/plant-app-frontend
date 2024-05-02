@@ -4,7 +4,7 @@ export function SchedulesIndex(props) {
       <h1 className="index-header">Your Plants</h1>
       <div className="container">
         {props.schedules.map((schedule) => (
-          <div key={schedule.id} className="card">
+          <div key={schedule.id}>
             <article className="card">
               <img
                 className="card__background"
