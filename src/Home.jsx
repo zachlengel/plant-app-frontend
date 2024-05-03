@@ -20,7 +20,7 @@ export function Home() {
         </p>
       </div>
       <div className="water">
-        <h1 className="transition">How much water do I need to give my plants?</h1>
+        <h1 className="transition">How much water?</h1>
         <p className="p1">Over-watering can be worse than under-watering!</p>
         <p className="p2">
           Water them until you notice water draining out of the bottom. That means the soil has absorbed all the water

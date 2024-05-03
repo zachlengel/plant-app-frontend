@@ -246,6 +246,9 @@ h2 {
   margin: 0 0 3rem 0;
   border-radius: 4rem;
   font-family: Montserrat Alternates;
+  text-decoration: underline;
+  color: rgb(255, 234, 0);
+  text-shadow: 10px 5px 10px black;
 }
 
 .homepage p {
@@ -253,6 +256,7 @@ h2 {
   margin: 0 2em 5rem 2em;
   border-radius: 4rem;
   font-family: Noto Sans Mono;
+  text-shadow: 10px 5px 10px black;
 }
 
 .wedo {
@@ -271,6 +275,9 @@ h2 {
   margin: 0 0 3rem 0;
   border-radius: 4rem;
   font-family: Montserrat Alternates;
+  text-decoration: underline;
+  color: rgb(255, 234, 0);
+  text-shadow: 10px 5px 10px black;
 }
 
 .wedo p {
@@ -278,6 +285,7 @@ h2 {
   margin: 0 2em 5rem 2em;
   border-radius: 4rem;
   font-family: Noto Sans Mono;
+  text-shadow: 10px 5px 10px black;
 }
 
 .water {
@@ -296,6 +304,9 @@ h2 {
   margin: 0 0 3rem 0;
   border-radius: 4rem;
   font-family: Montserrat Alternates;
+  text-decoration: underline;
+  color: rgb(255, 234, 0);
+  text-shadow: 10px 5px 10px black;
 }
 
 .water p {
@@ -303,6 +314,7 @@ h2 {
   margin: 0 2em 5rem 2em;
   border-radius: 4rem;
   font-family: Noto Sans Mono;
+  text-shadow: 10px 5px 10px black;
 }
 
 .schedules-index {
