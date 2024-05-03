@@ -1,9 +1,6 @@
 import "./Modal.css";
-import { useState } from "react";
 
 export function Modal(props) {
-  const [plants, setPlants] = useState([]);
-
   if (props.show) {
     return (
       <div className="modal-background">

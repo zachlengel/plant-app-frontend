@@ -16,6 +16,7 @@ html {
   background-image: url(https://st.depositphotos.com/1793716/1354/i/450/depositphotos_13549785-stock-photo-old-dirty-wooden-texture-in.jpg);
 }
 
+/* Navbar */
 header {
   background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/wooden-fence-background-free-photo.jpg?w=2210&quality=70);
   background-size: cover;
@@ -47,6 +48,7 @@ li {
   display: inline;
 }
 
+/* Plants and schedules index */
 .container {
   text-align: center;
   padding: 2vw;
@@ -96,7 +98,7 @@ h2 {
 }
 
 
-/* CARD COMPONENT */
+/* Plants and schedules cards */
 
 .card {
   display: grid;
@@ -224,12 +226,7 @@ h2 {
   }
 }
 
-.bottom-text {
-  background-color: white;
-  color: black;
-  border-radius: 0 0 3em 3em;
-}
-
+/* Main welcome page */
 .homepage {
   background-image: url(https://media0.giphy.com/media/xdkXW7Scx6gus/giphy.gif?cid=6c09b9522s8ntrctq1fh4jv7mcbuf9yq2kaxfsmb0o0hdbk6&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
   background-size: cover;
@@ -317,6 +314,7 @@ h2 {
   text-shadow: 10px 5px 10px black;
 }
 
+/* Schedules */
 .schedules-index {
   text-align: center;
 }
@@ -326,6 +324,7 @@ h2 {
   font-size: 1.2em;
 }
 
+/* Button for cards and header */
 .button-33 {
   background-color: #c2fbd7;
   border-radius: 10px;
@@ -357,6 +356,7 @@ header .button-33 {
   color: white;
 }
 
+/* Footer */
 footer {
   background-color: rgba(240, 248, 255, 0.66);
   text-align: center;
@@ -367,6 +367,7 @@ footer img {
   margin: .5em 2em;
 }
 
+/* Animations for text, cards and buttons */
 @keyframes gm-slidein {
   from {
       -webkit-transform:translate3d(0,-100%,0);
@@ -421,6 +422,7 @@ footer img {
   text-align:center;
 }
 
+/* Signup flash message */
 .flash {
   color: white;
   text-align: center;

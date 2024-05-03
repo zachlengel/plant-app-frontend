@@ -1,21 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 export function Footer() {
-  const ButtonMailto = ({ mailto, label }) => {
-    return (
-      <Link
-        to="#"
-        onClick={(e) => {
-          window.location.href = mailto;
-          e.preventDefault();
-        }}
-      >
-        {label}
-      </Link>
-    );
-  };
-
   return (
     <footer>
       <p>
@@ -28,7 +11,12 @@ export function Footer() {
             alt="Linkedin"
           />
         </a>
-        <ButtonMailto label="E-Mail Me" mailto="mailto:no-reply@example.com" />
+        <a href="mailto:example@email.com">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png"
+            alt="Email"
+          />
+        </a>
       </p>
     </footer>
   );
