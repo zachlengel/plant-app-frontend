@@ -24,7 +24,7 @@ export function PlantShow(props) {
       </div>
       {/* Schedule form */}
       <div className="new-schedule">
-        <h1>Create a Schedule</h1>
+        <h1>New Schedule</h1>
         <form onSubmit={handleSubmit}>
           <div>
             <input defaultValue={props.plant.id} name="plant_id" type="hidden" />
