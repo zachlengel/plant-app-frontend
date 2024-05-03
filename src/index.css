@@ -17,7 +17,7 @@ html {
 }
 
 header {
-  background-image: url(https://static.vecteezy.com/system/resources/previews/024/494/413/large_2x/cobblestoned-pavement-green-moss-between-brick-background-old-stone-pavement-texture-cobbles-closeup-with-green-grass-in-the-seams-stone-paved-walkway-in-old-town-free-photo.jpg);
+  background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/wooden-fence-background-free-photo.jpg?w=2210&quality=70);
   background-size: cover;
   box-shadow: 0 1rem 2rem black;
 }
@@ -74,7 +74,6 @@ li {
   font-family: Montserrat;
   text-shadow: rgb(0, 0, 0) 10px 0 10px;
 }
-
 
 :root {
   --brand-color: hsl(46, 100%, 50%);
@@ -256,6 +255,56 @@ h2 {
   font-family: Noto Sans Mono;
 }
 
+.wedo {
+  background-image: url(https://i.gifer.com/embedded/download/32bt.gif);
+  background-size: cover;
+  margin: 5em 1em 0 1em;
+  box-shadow: 1rem 1rem 2rem black;
+  color: white;
+  text-align: center;
+  border-radius: 2rem;
+  border: solid;
+}
+
+.wedo h1 {
+  font-size: calc(3vh + 3vw);
+  margin: 0 0 3rem 0;
+  border-radius: 4rem;
+  font-family: Montserrat Alternates;
+}
+
+.wedo p {
+  font-size: calc(2vh + 2vw);
+  margin: 0 2em 5rem 2em;
+  border-radius: 4rem;
+  font-family: Noto Sans Mono;
+}
+
+.water {
+  background-image: url(https://64.media.tumblr.com/9e0731c5fd8e97d29a6f1f6928355572/tumblr_p2zkqfzA4B1wxub9uo1_1280.gif);
+  background-size: cover;
+  margin: 5em 1em 2em 1em;
+  box-shadow: 1rem 1rem 2rem black;
+  color: white;
+  text-align: center;
+  border-radius: 2rem;
+  border: solid;
+}
+
+.water h1 {
+  font-size: calc(3vh + 3vw);
+  margin: 0 0 3rem 0;
+  border-radius: 4rem;
+  font-family: Montserrat Alternates;
+}
+
+.water p {
+  font-size: calc(2vh + 2vw);
+  margin: 0 2em 5rem 2em;
+  border-radius: 4rem;
+  font-family: Noto Sans Mono;
+}
+
 .schedules-index {
   text-align: center;
 }
@@ -366,4 +415,5 @@ footer img {
   background-color: rgba(0, 0, 0, 0.403);
   margin-top: .5em;
 }
+
 
