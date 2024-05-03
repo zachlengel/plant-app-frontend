@@ -46,7 +46,7 @@ export function Signup() {
           </div>
         </div>
         <button className="button-33" type="submit">
-          Create Account
+          Join
         </button>
       </form>
     </div>
