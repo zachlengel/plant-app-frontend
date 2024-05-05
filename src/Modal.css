@@ -42,7 +42,7 @@
 /* For all plants index modal */
 .show {
   text-align: center;
-  font-size: calc(2vh + 2vw);
+  font-size: 2vw;
   background-color: rgba(255, 255, 255, 0.794);
   margin: 0;
   border-radius: 3rem;
@@ -51,13 +51,13 @@
 
 .show h1 {
   text-decoration: underline;
-  font-size: 5vw;
+  font-size: 3.8vw;
   font-family: orbitron;
 }
 
 .new-schedule {
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
   background-color: rgba(255, 255, 255, 0.794);
   margin: 2em 0;
   padding: 1em 0;
@@ -67,7 +67,7 @@
 
 .new-schedule h1 {
   text-decoration: underline;
-  font-size: 5vw;
+  font-size: 3.8vw;
   font-family: orbitron;
 }
 
@@ -82,7 +82,7 @@
 }
 
 #login h1 {
-  font-size: 5vw;
+  font-size: 3.8vw;
   margin-bottom: .2em;
   line-height: 1em;
   text-decoration: underline;
